@@ -52,6 +52,10 @@ c.JupyterHub.authenticator_class = "nativeauthenticator.NativeAuthenticator"
 # Allow anyone to sign-up without approval
 c.NativeAuthenticator.open_signup = True
 
+# Allowed users
+allowed_users = {"admin"}
+c.Authenticator.allowed_users = allowed_users
+
 # Allowed admins
 admin = os.environ.get("JUPYTERHUB_ADMIN")
 if admin:

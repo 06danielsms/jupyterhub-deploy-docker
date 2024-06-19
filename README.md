@@ -190,3 +190,11 @@ docker run --rm \
 ```
 
 The above command creates a tarball in the `/tmp` directory on the host.
+
+### Config .env
+
+  ```sh
+DOCKER_NOTEBOOK_IMAGE=jupyter/base-notebook:latest
+DOCKER_NETWORK_NAME=jupyterhub_network
+JUPYTERHUB_ADMIN=admin
+```
